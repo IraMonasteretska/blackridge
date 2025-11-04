@@ -1,0 +1,154 @@
+$gold: #B69D68;
+$silver: #C0C0C0;
+
+body,
+html {
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+
+    &.hidden {
+        overflow: hidden;
+    }
+
+    & * {
+        line-height: 150%;
+        box-sizing: border-box;
+    }
+}
+
+@media(min-width:1500px) {
+    .container {
+        max-width: 1424px;
+    }
+}
+
+input {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fill-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.border-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border: 1px solid $gold;
+    border-radius: 30px;
+    color: #fff;
+    padding: 2px 16px;
+    transition: 0.5s;
+
+    &:hover {
+        background: $gold;
+    }
+}
+
+.explorelink {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid $silver;
+    color: #fff;
+    padding: 2px 16px;
+    height: 44px;
+    transition: 0.3s;
+
+    img {
+        width: 20px;
+        margin-left: 4px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: $silver;
+        color: #000;
+
+        img {
+            filter: brightness(0);
+            animation: move 2s infinite;
+        }
+    }
+}
+
+.crcle-link {
+    
+}
+
+
+
+@-webkit-keyframes move {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h1, .texth1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+
+    span {
+        display: block;
+        color: $silver;
+    }
+}
