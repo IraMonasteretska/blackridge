@@ -4,11 +4,16 @@ header.header {
     z-index: 9;
     width: 100%;
     left: 0;
-    top: 40px;
+    padding: 40px 0;
     transition: 0.5s;
 
     .border-btn {
         backdrop-filter: blur(7px);
+    }
+
+    &.scroll {
+        padding: 20px 0;
+        background: rgba(#000, 0.8);
     }
 }
 

@@ -37,6 +37,10 @@
         margin-bottom: 40px;
     }
 
+    .texth1 {
+        margin-bottom: 28px;
+    }
+
 }
 
 .heroinfo {
@@ -47,5 +51,89 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+.infosection {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .bigimg {
+        width: calc(100% - 20px);
+        position: relative;
+        height: 570px;
+    }
+
+    .infbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .imgwrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                color: #000;
+                font-size: 14px;
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .description {
+        padding-left: 80px;
+        position: relative;
+
+        &.dircol {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+        }
+
+        p {
+            color: #000;
+
+        }
+
+        .topblock {
+            max-width: 440px;
+        }
+    }
+
+    .bgelement {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
     }
 }
