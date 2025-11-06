@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,12 +17,12 @@
         <header class="header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-2">
+                    <div class="col-xl-2 col-sm-4">
                         <a href="#" class="header__logo">
                             <img src="img/general/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-8 mobmenu">
                         <nav>
                             <ul class="header__nav">
                                 <li><a href="#">About Us</a></li>
@@ -32,13 +33,18 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
+                        <a href="#" class="border-btn show-mobile">Book a Consultation</a>
+                       
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-xl-2 col-sm-8">
                         <div class="text-end">
-                            <a href="#" class="border-btn">Book a Consultation</a>
+                            <a href="#" class="border-btn hide-tel">Book a Consultation</a>
                         </div>
                     </div>
                 </div>
+                <button class="menubtn">
+                    <img src="img/general/menu.png" alt="menu">
+                </button>
             </div>
         </header>
 
@@ -47,7 +53,7 @@
                 <img class="fill-img" src="img/main/hero.jpg" alt="hero">
                 <div class="container">
                     <div class="row justify-content-between align-items-end">
-                        <div class="col-xl-4">
+                        <div class="col-xxl-4 col-xl-5 col-md-6">
                             <div class="heroinfo">
                                 <h1>
                                     <span>Disciplined </span>
@@ -64,7 +70,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-5">
+                        <div class="col-xl-5 col-lg-5 col-md-6  hide-tel">
                             <div class="heroinfo">
                                 <p class="texth1">
                                     <span>Strategic </span>
@@ -87,7 +93,7 @@
             <div class="infosection">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-lg-6 col-md-8">
                             <div class="description dircol">
                                 <div class="vertical-textbox">
                                     <span>About The firm</span>
@@ -117,12 +123,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-md-4 ">
                             <div class="bigimg">
                                 <img class="fill-img" src="img/main/img1.jpg" alt="img">
                             </div>
                         </div>
-                        <div class="col-xl-2">
+                        <div class="col-lg-2 hide-tablet">
                             <div class="infbox">
                                 <div class="imgwrap">
                                     <img class="fill-img" src="img/main/img2.jpg" alt="img">
@@ -144,19 +150,19 @@
             <div class="whatwedo greybg">
                 <div class="container">
                     <div class="row align-items-center justify-content-between section-title">
-                        <div class="col-xl-5">
+                        <div class="col-xl-5 col-md-6">
                             <p class="sectsubtitle">
                                 <span>Our services</span>
                             </p>
                         </div>
-                        <div class="col-xl-4">
-                            <h2 class="text-end m-0">
+                        <div class="col-xl-4 col-md-6">
+                            <h2 class="text-end text-sm-start m-0">
                                 What We <i>Do</i>
                             </h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-4">
+                        <div class="col-lg-4">
                             <a href="#" class="wwd-item">
                                 <div class="descr">
                                     <h5>Tax Structuring</h5>
@@ -182,11 +188,9 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-lg-4">
                             <a href="#" class="wwd-item black">
-                                <div class="imgwrap">
-                                    <img class="fill-img" src="img/main/wwd2.jpg" alt="img">
-                                </div>
+                               
                                 <div class="descr">
                                     <h5>Real Estate</h5>
                                     <p>
@@ -207,10 +211,13 @@
                                         </span>
                                     </div>
                                 </div>
+                                 <div class="imgwrap">
+                                    <img class="fill-img" src="img/main/wwd2.jpg" alt="img">
+                                </div>
 
                             </a>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-lg-4">
                             <a href="#" class="wwd-item">
                                 <div class="descr">
                                     <h5>Distressed Opportunities</h5>
@@ -242,31 +249,35 @@
 
             <div class="leadership">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-8">
-                            <div class="description pl80 position-relative">
-                                <div class="vertical-textbox darkbg">
-                                    <span>Leadership</span>
-                                </div>
-                                <h3 class="white">
-                                    Blackridge Crown Investments is led by its Chief Executive Officer, <i>Stephen
-                                        Holland</i>.
-                                </h3>
-                                <p>
-                                    Under his direction, the firm pursues a disciplined approach to capital structuring,
-                                    real<br> estate acquisition, and opportunistic investment.
-                                </p>
-                            </div>
+                    <div class="pl80 position-relative">
+                        <div class="vertical-textbox darkbg">
+                            <span>Leadership</span>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="leadership-imgblock">
-                                <img src="img/main/leader.png" alt="leader">
-                                <a href="#">
-                                    <span>
-                                        Explore
-                                        <img src="img/general/arrow-right-white.svg" alt="">
-                                    </span>
-                                </a>
+                        <div class="row align-items-center">
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="description ">
+
+                                    <h3 class="white">
+                                        Blackridge Crown Investments is led by its Chief Executive Officer, <i>Stephen
+                                            Holland</i>.
+                                    </h3>
+                                    <p>
+                                        Under his direction, the firm pursues a disciplined approach to capital
+                                        structuring,
+                                        real<br> estate acquisition, and opportunistic investment.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="leadership-imgblock">
+                                    <img src="img/main/leader.png" alt="leader">
+                                    <a href="#">
+                                        <span>
+                                            Explore
+                                            <img src="img/general/arrow-right-white.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,19 +290,128 @@
                     <div class="connect__header">
                         <h2><i>Connect</i> with us</h2>
                     </div>
-                 
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="connect-form">
+                                <p class="connect-form__text">
+                                    For partnership, investment, or media inquiries, please complete the form below. Our
+                                    team will review your message and respond promptly.
+                                </p>
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Name*" required>
+                                </div>
+                                <div class="inputfield error">
+                                    <input type="number" placeholder="Phone*" required>
+                                </div>
+                                <div class="inputfield">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-xl-8">
+                                        <!-- or class .success -->
+                                        <p class="formstatus-message error">One or more fields have an error. Please
+                                            check and try again.</p>
+                                    </div>
+                                    <div class="col-xl-4 text-end">
+                                        <a href="#" class="circle-link white">
+                                            <span>Send</span>
+                                            <i>
+                                                <img src="img/general/arrow-right-black.svg" alt="arrow">
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-5">
+                            <div class="imgwrap">
+                                <img src="img/main/img3.jpg" alt="img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="swiper email-marquee">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon1.svg" alt="icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon2.svg" alt="icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon1.svg" alt="icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon2.svg" alt="icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon1.svg" alt="icon">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="mailto:Blackridge@gmail.com">Blackridge@gmail.com</a>
+                        <img src="img/footer/mail-icon2.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="footer-section">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#" class="footer__logo">
+                                <img src="img/footer/logo-footer.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">What We Do</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="footer-nav">
+                                <ul>
+                                    <li><a href="#">Insights</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer__address">
+                                <p>
+                                    Token House, City of London<br> London EC2R 7AS, United Kingdom
+                                </p>
+                                <a href="tel:+4402000000000">+44 (0)20 0000 0000</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 text-end">
+                            <div class="totop">
+                                <img src="img/footer/totop.svg" alt="scroll to top">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 
 </html>

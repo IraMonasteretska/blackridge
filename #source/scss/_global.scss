@@ -1,5 +1,6 @@
 $gold: #B69D68;
 $silver: #C0C0C0;
+$primary: #1A1A1A;
 
 body,
 html {
@@ -134,7 +135,6 @@ input[type=number] {
         padding: 3px 28px;
         border-radius: 60px;
         transition: 0.5s;
-        // background: linear-gradient(94.14deg, #B69D68 -12.15%, #E3CFA4 32.72%, #D1B477 55.1%, #B69D68 118.39%);
         background: linear-gradient(120deg, #B69D68 -12.15%, #e1ca99 32.72%, #D1B477 55.1%, #B69D68 118.39%);
     }
 
@@ -148,8 +148,12 @@ input[type=number] {
         align-items: center;
         justify-content: center;
         transition: 0.5s;
-        // background: linear-gradient(94.14deg, #B69D68 -12.15%, #E3CFA4 32.72%, #D1B477 55.1%, #B69D68 118.39%);
         background: linear-gradient(120deg, #B69D68 -12.15%, #e1ca99 32.72%, #D1B477 55.1%, #B69D68 118.39%);
+
+        img {
+            width: 20px;
+            transition: 0.5s;
+        }
     }
 
     &:hover {
@@ -160,6 +164,26 @@ input[type=number] {
         span,
         i {
             border-color: rgba(#fff, 0.7);
+        }
+    }
+
+    &.white {
+
+        span,
+        i {
+            background: #fff;
+            border: 1px solid #999;
+            color: $primary;
+        }
+
+        &:hover {
+
+            span,
+            i {
+                border-color: $primary;
+
+                img {}
+            }
         }
     }
 }
@@ -261,4 +285,102 @@ h3 {
 
 .position-relative {
     position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1499.8px) {
+
+    .texth1,
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .texth1,
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .pl80 {
+        padding-left: 60px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .texth1,
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .hide-tablet {
+        display: none;
+    }
+}
+
+@media(max-width:767.8px) {
+    .hide-tel {
+        display: none;
+    }
+
+    .text-sm-start {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .pl80 {
+        padding-left: 40px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
 }
