@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    // animation init
+     AOS.init({
+        disable: 'mobile',
+        startEvent: 'DOMContentLoaded',
+        duration: 1500
+     });
+
     $(window).on('scroll load', function () {
         if ($(this).scrollTop() > 10) {
             $('.header').addClass('scroll');
@@ -26,6 +33,15 @@ $(document).ready(function () {
             behavior: 'smooth'
         });
     });
+
+    // mob menu
+    $('.menubtn').click(function () {
+        $('.mobmenu').addClass('show');
+    })
+    $('.closemenu').click(function () {
+        $('.mobmenu').removeClass('show');
+    })
+
 
 
 

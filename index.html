@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <!-- Short description of the page -->
+    <meta name="description" content="">
+    <!-- Keywords -->
+    <meta name="keywords" content="">
+    <!-- Author or company -->
+    <meta name="author" content="">
     <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,7 +41,9 @@
                             </ul>
                         </nav>
                         <a href="#" class="border-btn show-mobile">Book a Consultation</a>
-                       
+                        <button class="closemenu">
+                            <img src="img/general/close.png" alt="">
+                        </button>
                     </div>
                     <div class="col-xl-2 col-sm-8">
                         <div class="text-end">
@@ -55,36 +64,35 @@
                     <div class="row justify-content-between align-items-end">
                         <div class="col-xxl-4 col-xl-5 col-md-6">
                             <div class="heroinfo">
-                                <h1>
+                                <h1 data-aos="fade-right">
                                     <span>Disciplined </span>
                                     Capital.
                                     <img src="img/main/title-img.png" alt="img">
                                 </h1>
-                                <p>
+                                <p data-aos="fade-right" data-aos-delay="100">
                                     Blackridge Crown Investments is a private investment company focused on capital
                                     structuring, real estate, and alternative opportunities.
                                 </p>
-                                <a href="#" class="explorelink">
+                                <a href="#" class="explorelink" data-aos="fade-right" data-aos-delay="200">
                                     Explore More
                                     <img src="img/general/btn-arrowbott.svg" alt="img">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-md-6  hide-tel">
+                        <div class="col-xl-5 col-lg-5 col-md-6 hide-tel">
                             <div class="heroinfo">
-                                <p class="texth1">
+                                <p class="texth1" data-aos="fade-left">
                                     <span>Strategic </span>
                                     Opportunities.
                                 </p>
 
-                                <a href="#" class="circle-link">
+                                <a href="#" class="circle-link" data-aos="fade-left" data-aos-delay="100">
                                     <span>Contact us</span>
                                     <i>
                                         <img src="img/general/arrow-right-white.svg" alt="arrow">
                                     </i>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -99,11 +107,11 @@
                                     <span>About The firm</span>
                                 </div>
                                 <div class="topblock">
-                                    <h2>
+                                    <h2 data-aos="fade-left">
                                         Long-Term
                                         <span>Value</span>
                                     </h2>
-                                    <p>
+                                    <p  data-aos="fade-left">
                                         Blackridge Crown Investments is a private investment company based at Token
                                         House in
                                         the City of London. We focus on creating long-term value through disciplined
@@ -123,14 +131,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 ">
-                            <div class="bigimg">
+                        <div class="col-md-4">
+                            <div class="bigimg" data-aos="fade-up">
                                 <img class="fill-img" src="img/main/img1.jpg" alt="img">
                             </div>
                         </div>
                         <div class="col-lg-2 hide-tablet">
                             <div class="infbox">
-                                <div class="imgwrap">
+                                <div class="imgwrap"  data-aos="fade-up" data-aos-delay="300">
                                     <img class="fill-img" src="img/main/img2.jpg" alt="img">
                                 </div>
                                 <ul>
@@ -156,14 +164,14 @@
                             </p>
                         </div>
                         <div class="col-xl-4 col-md-6">
-                            <h2 class="text-end text-sm-start m-0">
+                            <h2 class="text-end text-sm-start m-0"  data-aos="fade-right">
                                 What We <i>Do</i>
                             </h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
-                            <a href="#" class="wwd-item">
+                            <a href="#" class="wwd-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="descr">
                                     <h5>Tax Structuring</h5>
                                     <p>
@@ -173,7 +181,7 @@
                                         realization across asset classes.
                                     </p>
                                     <div class="text-end">
-                                        <span class="arrow-el">
+                                        <span class="arrow-el" >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
                                                 viewBox="0 0 17 15" fill="none">
                                                 <path
@@ -189,8 +197,8 @@
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#" class="wwd-item black">
-                               
+                            <a href="#" class="wwd-item black" data-aos="fade-up" data-aos-delay="300">
+
                                 <div class="descr">
                                     <h5>Real Estate</h5>
                                     <p>
@@ -211,14 +219,14 @@
                                         </span>
                                     </div>
                                 </div>
-                                 <div class="imgwrap">
+                                <div class="imgwrap">
                                     <img class="fill-img" src="img/main/wwd2.jpg" alt="img">
                                 </div>
 
                             </a>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#" class="wwd-item">
+                            <a href="#" class="wwd-item" data-aos="fade-up" data-aos-delay="300">
                                 <div class="descr">
                                     <h5>Distressed Opportunities</h5>
                                     <p>
@@ -256,12 +264,11 @@
                         <div class="row align-items-center">
                             <div class="col-xl-8 col-lg-7">
                                 <div class="description ">
-
-                                    <h3 class="white">
+                                    <h3 class="white" data-aos="fade-left">
                                         Blackridge Crown Investments is led by its Chief Executive Officer, <i>Stephen
                                             Holland</i>.
                                     </h3>
-                                    <p>
+                                    <p data-aos="fade-left" data-aos-delay="100">
                                         Under his direction, the firm pursues a disciplined approach to capital
                                         structuring,
                                         real<br> estate acquisition, and opportunistic investment.
@@ -288,7 +295,7 @@
             <div class="connect">
                 <div class="container">
                     <div class="connect__header">
-                        <h2><i>Connect</i> with us</h2>
+                        <h2 data-aos="fade-left"><i>Connect</i> with us</h2>
                     </div>
                     <div class="row align-items-lg-center">
                         <div class="col-lg-6 col-md-7">
@@ -411,6 +418,7 @@
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 

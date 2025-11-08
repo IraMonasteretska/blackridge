@@ -110,11 +110,39 @@ header.header {
 }
 
 @media(max-width:1199.8px) {
-    
+    .closemenu {
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 0;
+        background: transparent;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        width: 24px;
+
+        img {
+            width: 100%;
+        }
+    }
 
     .mobmenu {
-        display: none;
-       
+        // display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 400px;
+        background: #000;
+        height: 100vh;
+        z-index: 3;
+        padding: 70px 40px 40px 40px;
+        overflow: auto;
+        transform: translateX(100%);
+        transition: 0.5s;
+
+        &.show {
+            transform: translateX(0);
+        }
     }
 
     header .container {
