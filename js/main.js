@@ -1,10 +1,10 @@
 $(document).ready(function () {
     // animation init
-     AOS.init({
+    AOS.init({
         disable: 'mobile',
         startEvent: 'DOMContentLoaded',
         duration: 1500
-     });
+    });
 
     $(window).on('scroll load', function () {
         if ($(this).scrollTop() > 10) {
@@ -42,7 +42,11 @@ $(document).ready(function () {
         $('.mobmenu').removeClass('show');
     })
 
-
+    $('.has-animation').each(function (index) {
+        $(this).delay($(this).data('delay')).queue(function () {
+            $(this).addClass('animate-in');
+        });
+    });
 
 
 });

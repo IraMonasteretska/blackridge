@@ -585,6 +585,64 @@
     }
 }
 
+@media(max-width:767.8px) {
+    .ourvision {
+        .imgwrap {
+            display: none;
+        }
+
+        h2 {
+            padding-left: 0;
+        }
+    }
+
+    .sectsubtitle.darkbg:after {
+        left: initial;
+        right: 0;
+        width: calc(100% - 80px);
+    }
+
+    .section-title.section-title__whitebg .sectsubtitle span {
+        padding-right: 26px;
+    }
+
+    .approach__content {
+        justify-content: center;
+    }
+
+    .approach__item.left-item,
+    .approach__item.right-item {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+
+    .approach__item.center-item {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+
+    .approach .section-title {
+        margin-bottom: 30px;
+    }
+
+    .approach__item {
+        border: 1px solid #C0C0C0;
+        background: none !important;
+
+        .description {
+            max-width: 300px !important;
+            flex: 0 0 300px !important;
+
+            p {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+    }
 
 
 
@@ -593,19 +651,88 @@
 
 
 
-// .approach__content {
-//     justify-content: center;
-// }
 
-// .approach__item {
-//     &.center-item {
-//         max-width: 70%;
-//         flex: 0 0 70%;
-//     }
 
-//     &.left-item,
-//     &.right-item {
-//         max-width: 50%;
-//         flex: 0 0 50%;
-//     }
-// }
+
+    .aboutsect,
+    .approach,
+    .letstalk,
+    .ourphilosophy {
+        padding: 70px 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .hero-section {
+        height: 100vh;
+        max-height: initial;
+    }
+
+    .aboutsect h3 {
+        margin-top: 0;
+    }
+
+    .section-title.section-title__whitebg {
+        margin-bottom: 20px;
+    }
+
+    .about-description .title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .ourphilosophy__topblock {
+        margin-bottom: 50px;
+    }
+
+    .ourphilosophy__botblock h3,
+    .vision-content h2 {
+        span {
+            display: inline;
+            padding-left: 0;
+        }
+    }
+
+    .vision-content {
+        padding-top: 0;
+    }
+
+    .approach__item .description {
+        max-width: 220px !important;
+        flex: 0 0 220px !important;
+    }
+
+    .approach__item.left-item,
+    .approach__item.right-item,
+    .approach__item.center-item {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .letstalk h3 {
+        line-height: 200%;
+
+        br {
+            display: none;
+        }
+    }
+
+    .letstalk h3 .circle-link {
+        margin: 3px 0;
+    }
+
+
+
+    .aboutsect,
+    .approach,
+    .letstalk,
+    .ourphilosophy,
+    .ourvision {
+        padding: 60px 0;
+    }
+
+    .ourphilosophy h2 {
+        margin-bottom: 20px;
+    }
+}

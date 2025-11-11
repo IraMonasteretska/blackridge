@@ -1,0 +1,266 @@
+.hero-section.darker {
+    &:before {
+        background: linear-gradient(to bottom, rgba(26, 26, 26, 0.5) 23.56%, rgba(26, 26, 26, 0) 94.79%);
+
+    }
+
+    &:after {
+        background: linear-gradient(to top, rgba(26, 26, 26, 0.5) 61.57%, rgba(26, 26, 26, 0) 94.79%);
+
+    }
+}
+
+.hero-section {
+    p.subtitle {
+        color: #fff;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.infosection_leader {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .infosect {
+        max-width: 455px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .bgelement {
+        object-position: 0 0;
+    }
+
+    .description {
+        padding-left: 0;
+    }
+}
+
+.meetourfounder {
+    padding: 120px 0;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(#1A1A1A, 0.9);
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+}
+
+.meetourfounder__text {
+    color: #fff;
+    margin: 0;
+}
+
+.founder-cardbox {
+    width: 100%;
+    max-width: 413px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+
+    .imgwrap {
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 16 / 11;
+        margin-bottom: 32px;
+    }
+
+    h5 {
+        font-family: "Libre Baskerville", serif;
+        margin-bottom: 12px;
+        color: #0E1E2B;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        color: $primary;
+    }
+}
+
+.basement {
+    padding: 60px 0 80px;
+}
+
+.sectsubtitle.white {
+    span {
+        background: #fff;
+    }
+}
+
+.basement-item {
+    max-width: 250px;
+
+    .num {
+        margin: 0;
+        display: block;
+        color: #999;
+        font-size: 40px;
+    }
+
+    p {
+        margin: 0;
+        color: $primary;
+        font-size: 18px;
+    }
+}
+
+.basement-list {
+    margin-bottom: 80px;
+}
+
+.basement__body {
+    .imgwrap img {
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .descr {
+
+
+        p {
+            color: $primary;
+            margin-bottom: 30px;
+            font-size: 24px;
+
+            &.grey-text {
+                color: #999;
+            }
+        }
+
+        .circle-link {
+            margin-top: 35px;
+        }
+    }
+}
+
+.vertical-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.locinfo {
+    .loc-icon {
+        width: 28px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: #999;
+        margin-bottom: 12px;
+
+        span {
+            color: #000;
+            font-style: italic;
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .infosection .description p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .basement-list {
+        padding-left: 30px;
+    }
+
+    .basement__body .descr {
+        padding: 0 30px;
+
+        p {
+            font-size: 21px;
+        }
+    }
+
+    .meetourfounder {
+        padding: 100px 0;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .basement__body .descr p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .basement__body .descr .circle-link {
+        margin-top: 15px;
+    }
+
+    .locinfo .loc-icon {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:991.8px) {
+    .infosection_leader .infosect {
+        max-width: 100%;
+    }
+
+    .meetourfounder__text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .meetourfounder h3 {
+        margin-bottom: 30px;
+    }
+
+    .meetourfounder .explorelink {
+        margin-top: 30px;
+    }
+
+    .meetourfounder {
+        padding: 80px 0;
+    }
+
+    .basement-list {
+        padding-left: 0;
+        margin: 20px 0 30px;
+    }
+
+    .basement__body .descr {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+   
+
+
+}

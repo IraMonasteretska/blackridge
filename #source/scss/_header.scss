@@ -59,7 +59,7 @@ header.header {
             }
 
 
-            &:hover {
+            &:hover, &.active {
                 &::after {
                     width: 100%;
                 }
