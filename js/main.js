@@ -48,5 +48,34 @@ $(document).ready(function () {
         });
     });
 
+    // scroll to anchor
+    $(".scrolllink").on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+
+    // tabs
+    const buttons = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tabcontent');
+
+    buttons.forEach((btn, i) => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            buttons.forEach(b => b.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            this.classList.add('active');
+            contents[i].classList.add('active');
+        });
+    });
+
+
+
+
 
 });

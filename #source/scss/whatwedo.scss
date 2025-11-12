@@ -1,0 +1,260 @@
+.whatwedosect {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+
+    .bgelement {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        animation: pulse1 18s infinite;
+        animation-timing-function:
+            ease-in-out;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.whatwedo__picwrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 645px;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.sectsubtitle.mb40 {
+    margin-bottom: 40px;
+}
+
+.sectsubtitle.reverse {
+    text-align: left;
+}
+
+.wwd-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.wwd-topsect {
+    width: 100%;
+    margin-bottom: 50px;
+
+    h2 {
+        margin-bottom: 28px;
+    }
+
+    .descr {
+        p {
+            max-width: 520px;
+            color: #000;
+            font-size: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.wwd-bottsect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.exploreservises {
+    width: 100%;
+    max-width: 217px;
+    flex: 0 0 217px;
+}
+
+.textwrapper {
+    width: 100%;
+    max-width: calc(100% - 217px);
+    flex: 0 0 calc(100% - 217px);
+    padding-right: 90px;
+    margin-left: -18px;
+    margin-right: -18px;
+    display: flex;
+
+    .textwrapper-col {
+        padding-left: 18px;
+        padding-right: 18px;
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+
+        p {
+            color: $primary;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.exploreservises__box {
+    background: $gold;
+    position: relative;
+    padding: 97px 40px 40px 44px;
+    text-align: center;
+
+    p {
+        margin-bottom: 8px;
+        color: #fff;
+        color: #fff;
+    }
+
+    .arrbtn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid #C0C0C0;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: #fff;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .toppic {
+        width: 100%;
+        max-width: 180px;
+        position: absolute;
+        top: -110px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+}
+
+.services {
+    background: $primary;
+    padding: 120px 0;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.tab-btn {
+    width: 100%;
+    height: 73px;
+    border: 1px solid rgba(#B69D68, 0.2);
+    color: #fff;
+    font-size: 24px;
+    background: transparent;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+        border-color: #B69D68;
+    }
+}
+
+.services__tabbtns {
+    margin-bottom: 80px;
+}
+
+.tabimg {
+    height: 428px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+
+.servdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.servdescription__top {
+    h3 {
+        margin-bottom: 30px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        max-width: 575px;
+    }
+}
+
+.servdescription__bottom {
+    .title {
+        margin-bottom: 24px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-width: 575px;
+
+        li {
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            color: #fff;
+            border-bottom: 1px solid rgba(#C0C0C0, 0.5);
+
+            &:nth-child(1) {
+                border-top: 1px solid rgba(#C0C0C0, 0.5);
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
