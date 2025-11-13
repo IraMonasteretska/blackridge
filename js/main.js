@@ -74,8 +74,24 @@ $(document).ready(function () {
         });
     });
 
+    // filter
 
+    $('.sort-text').on('click', function () {
+        $(this).siblings('.filter-descr').stop(true, true).slideToggle(200);
+        $(this).toggleClass('active');
+    });
 
+    $('.filter-item ul .filter-btn').on('click', function () {
+        let selectedText = $(this).text();
+        let $filterItem = $(this).closest('.filter-item');
+        let $descr = $filterItem.find('.filter-descr');
+
+        $filterItem.find('.sortval').text(selectedText);
+
+        $descr.stop(true, true).slideUp(200);
+
+        $(this).parents('.filter-item').find('.sort-text').removeClass('active');
+    });
 
 
 });

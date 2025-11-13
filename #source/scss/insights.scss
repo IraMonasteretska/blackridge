@@ -1,0 +1,278 @@
+.insights-section {
+    padding: 90px 0;
+    border-bottom: 1px solid #C0C0C0;
+
+    h3 {
+        margin-bottom: 30px;
+    }
+}
+
+.filter {
+    max-width: 385px;
+}
+
+.stickybox {
+    position: sticky;
+    top: 100px;
+}
+
+.filter-item {
+    padding: 18px 0;
+    border-top: 1px solid rgba(#999999, 0.5);
+
+    &:last-child {
+        border-bottom: 1px solid rgba(#999999, 0.5);
+    }
+
+    .filter-descr {
+        display: none;
+
+        .d-flex {
+            align-items: flex-start;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 18px 0 6px 0;
+
+        li {
+            margin-bottom: 18px;
+
+            .filter-btn {
+                border: none;
+                background: transparent;
+                padding: 0;
+                outline: none;
+                font-size: 14px;
+                color: $primary;
+                cursor: pointer;
+                text-transform: capitalize;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $gold;
+                }
+            }
+        }
+    }
+}
+
+.sort-text {
+    margin: 0;
+    color: $primary;
+    position: relative;
+    transition: 0.3s;
+    display: inline-block;
+    padding-right: 22px;
+    cursor: pointer;
+
+    i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        font-style: normal;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(0);
+        transition: 0.3s;
+
+        svg {
+            path {
+                fill: $primary;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &:hover {
+        color: $gold;
+
+        i svg path {
+            fill: $gold;
+        }
+    }
+
+    &.active {
+        color: $gold;
+
+        i {
+            transform: translateY(-50%) rotate(-180deg);
+
+            svg path {
+                fill: $gold;
+            }
+        }
+    }
+}
+
+.filter-content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.filter-tabbtns {
+    max-width: 160px;
+    flex: 0 0 160px;
+}
+
+.filter-tabcontent {
+    max-width: calc(100% - 160px);
+    flex: 0 0 calc(100% - 160px);
+}
+
+.filter-tabbtn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.active {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+}
+
+.filtercheck {
+    input {
+        display: none;
+
+        &:checked+label {
+            &::before {
+                background: url('../img/insights/check.png') no-repeat center / 100%;
+            }
+        }
+    }
+
+    label {
+        display: block;
+        position: relative;
+        padding-left: 24px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #C0C0C0;
+        }
+    }
+}
+
+.filter-item ul.filter-checkboxes li {
+    margin-bottom: 12px;
+}
+
+.insight-mainbox {
+    display: block;
+    margin-bottom: 60px;
+
+    .imgwrap {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 20px;
+
+        img {
+            transition: 0.8s;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #000;
+        transition: 0.3s;
+        margin: 0;
+    }
+
+    .date {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-family: "Libre Baskerville", serif;
+        color: $primary;
+    }
+
+    &:hover {
+        p {
+            // color: $gold;
+        }
+
+        .imgwrap img {
+            transform: scale(1.1);
+        }
+
+        .descr {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .descr {
+        padding-bottom: 20px;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $gold;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            transition: 0.5s;
+        }
+    }
+}
+
+.insight-box {
+    margin-bottom: 60px;
+
+    .description {
+        padding-bottom: 20px;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $gold;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            transition: 0.5s;
+        }
+    }
+
+    &:hover {
+        .description {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.perspectives {
+    padding: 90px 0;
+}

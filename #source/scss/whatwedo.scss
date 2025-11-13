@@ -44,6 +44,10 @@
 
 .sectsubtitle.reverse {
     text-align: left;
+
+    span {
+        padding-left: 0;
+    }
 }
 
 .wwd-description {
@@ -250,6 +254,303 @@
 
 }
 
+.insights {
+    padding: 120px 0 50px;
+
+    .circle-link {
+        margin-top: 30px;
+    }
+
+    .insight-box {
+        margin-bottom: 0;
+    }
+}
+
+.insight-box {
+    display: block;
+
+    .imgwrap {
+        position: relative;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+
+    p {
+        margin: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: 18px;
+        color: $primary;
+        transition: 0.3s;
+    }
+
+    .date {
+        font-family: "Work Sans", sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    &.insight-box__small {
+
+        p {
+            font-size: 14px;
+        }
+
+        .date {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .description {
+        transition: 0.5s;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+
+    &:hover {
+        .description {
+            p {
+                color: $gold;
+            }
+        }
+    }
+}
+
+
+@media(max-width:1499.8px) {
+    .textwrapper {
+        margin: 0;
+        padding-right: 50px;
+    }
+
+    .wwd-topsect {
+        margin-bottom: 20px;
+
+        .descr p {
+            font-size: 21px;
+        }
+    }
+
+    .whatwedo__picwrap {
+        min-height: 600px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .whatwedosect,
+    .services {
+        padding: 100px 0;
+    }
+
+    .insights {
+        padding-top: 100px;
+    }
+
+    .textwrapper {
+        padding-right: 20px;
+    }
+
+    .wwd-topsect h2 {
+        margin-bottom: 15px;
+    }
+
+    .whatwedo__picwrap {
+        min-height: 550px;
+    }
+
+    .tab-btn {
+        font-size: 21px;
+        height: 60px;
+    }
+
+    .tabimg {
+        height: 370px;
+    }
+
+
+    .wwd-topsect .descr p {
+        font-size: 18px;
+    }
+
+    .textwrapper .textwrapper-col p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .tab-btn {
+        font-size: 18px;
+    }
+
+    .services__tabbtns {
+        margin-bottom: 50px;
+    }
+
+    .servdescription__top h3 {
+        margin-bottom: 15px;
+    }
+
+    .servdescription__bottom .title {
+        margin-bottom: 15px;
+    }
+
+    .servdescription__bottom ul li {
+        min-height: 54px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .whatwedo__picwrap {
+        display: none;
+    }
+
+    .wwd-topsect .descr p {
+        max-width: 450px;
+    }
+
+    .servdescription__top p,
+    .servdescription__bottom ul {
+        max-width: 100%;
+    }
+
+    .servdescription__top p {
+        font-size: 16px;
+    }
+
+    .servdescription__bottom {
+        margin-bottom: 30px;
+    }
+
+    .tabimg {
+        height: 300px;
+        margin-bottom: 15px;
+
+        img {
+            object-position: center top;
+        }
+    }
+
+    .insights {
+        padding-top: 80px;
+    }
+
+
+    .tab-btn {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .services,
+    .whatwedosect {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+    .insights {
+        padding-top: 70px;
+    }
+
+    .services,
+    .whatwedosect {
+        padding: 70px 0;
+    }
+
+    .exploreservises {
+        max-width: 160px;
+        flex: 0 0 160px;
+    }
+
+    .textwrapper {
+        max-width: calc(100% - 160px);
+        flex: 0 0 calc(100% - 160px);
+    }
+
+    .exploreservises__box {
+        padding: 50px 15px 20px 15px;
+
+        p {
+            font-size: 14px;
+        }
+
+        .toppic {
+            max-width: 100px;
+            top: -60px;
+        }
+    }
+
+    .textwrapper {
+        flex-wrap: wrap;
+
+        .textwrapper-col {
+            padding: 0;
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .insight-box {
+        margin-bottom: 20px;
+    }
+
+    .insights .circle-link {
+        margin-top: 10px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .services,
+    .whatwedosect {
+        padding: 60px 0;
+    }
+
+    .sectsubtitle.mb40 {
+        margin-bottom: 20px;
+    }
+
+    .wwd-topsect .descr p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    
+    .exploreservises {
+        display: none;
+    }
+
+    .textwrapper {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .tabimg {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .textwrapper .textwrapper-col {
+        margin-bottom: 10px;
+    }
+
+    .insights {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
 
 
 
@@ -258,3 +559,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
