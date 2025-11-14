@@ -122,6 +122,9 @@ input[type=number] {
     position: relative;
     display: inline-flex;
     align-items: center;
+    background: transparent;
+    padding: 0;
+    border: none;
 
     span {
         position: relative;

@@ -63,7 +63,7 @@
                 <div class="container">
                     <div class="has-animation animation-ltr" data-delay="10">
                         <h1>
-                            Insights
+                            <span>Insights</span>
                         </h1>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
             <div class="insights-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4">
-                            <div class="stickybox">
+                        <div class="col-lg-4">
+                            <div class="stickybox" data-aos="fade-up">
                                 <h3>Latest insights</h3>
                                 <div class="filter">
                                     <div class="filter-item">
@@ -89,7 +89,14 @@
                                             </i>
                                         </p>
                                         <div class="filter-descr">
-                                            
+                                            <ul>
+                                                <li>
+                                                    <button class="filter-btn">date</button>
+                                                </li>
+                                                <li>
+                                                    <button class="filter-btn">popularity</button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="filter-item">
@@ -105,16 +112,93 @@
                                             </i>
                                         </p>
                                         <div class="filter-descr">
-                                            
+                                            <div class="d-flex flex-wrap">
+                                                <div class="filter-tabbtns">
+                                                    <ul>
+                                                        <li><button class="filter-tabbtn active">Theme</button></li>
+                                                        <li><button class="filter-tabbtn">Type</button></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="filter-tabcontent">
+                                                    <div class="filter-content active">
+                                                        <ul class="filter-checkboxes">
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f1">
+                                                                    <label for="f1">Environment</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f2">
+                                                                    <label for="f2">Alternatives</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f3">
+                                                                    <label for="f3">Capital Structure</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f4">
+                                                                    <label for="f4">Real Assets</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f5">
+                                                                    <label for="f5">Opportunistic Investing</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f6">
+                                                                    <label for="f6">Institutional Philosophy</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f7">
+                                                                    <label for="f7">Real Estate</label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="filter-content">
+                                                        <ul class="filter-checkboxes">
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f8">
+                                                                    <label for="f8">News</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f9">
+                                                                    <label for="f9">Videos</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="filtercheck">
+                                                                    <input type="checkbox" id="f10">
+                                                                    <label for="f10">Podcasts</label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-8">
+                        <div class="col-lg-8">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="#" class="insight-mainbox">
+                                    <a href="#" class="insight-mainbox" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img class="fill-img" src="img/insights/img1.jpg" alt="img">
                                         </div>
@@ -138,8 +222,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img2.jpg" alt="img">
                                         </div>
@@ -151,8 +235,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img3.jpg" alt="img">
                                         </div>
@@ -164,8 +248,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img4.jpg" alt="img">
                                         </div>
@@ -177,8 +261,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img5.jpg" alt="img">
                                         </div>
@@ -190,8 +274,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img6.jpg" alt="img">
                                         </div>
@@ -203,8 +287,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img7.jpg" alt="img">
                                         </div>
@@ -216,8 +300,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img8.jpg" alt="img">
                                         </div>
@@ -229,8 +313,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="insight-box insight-box__small">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/insights/img9.jpg" alt="img">
                                         </div>
@@ -243,7 +327,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end text-sm-center">
                                 <a href="#" class="circle-link white">
                                     <span>Load More</span>
                                     <i>
@@ -265,9 +349,9 @@
                             </h3>
                         </div>
                         <div class="col-lg-8">
-                            <div class="row">
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                            <div class="row perspective-items">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Discipline in an Age
@@ -275,62 +359,172 @@
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Reading the Shifts: Structural Change in Global Markets
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Capital in Transition: From Reaction to Strategy
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             The Resurgence of Real Value
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Cycles and Clarity: Interpreting Market Momentum
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Navigating Inflation Through Discipline
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             When Markets Reset: Finding Opportunity in Repricing
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-xl-3">
-                                    <a href="#" class="perspective-item">
+                                <div class="col-xl-3 col-md-4 col-6">
+                                    <a href="#" class="perspective-item" data-aos="fade-up">
                                         <p class="date">03 Sept 2025</p>
                                         <p>
                                             Strategic Patience in a Rapid World
                                         </p>
                                     </a>
                                 </div>
+                            </div>
+                            <div class="text-end text-sm-center">
+                                <a href="#" class="circle-link white">
+                                    <span>View More</span>
+                                    <i>
+                                        <img src="img/insights/plus.svg" alt="plus">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investments">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3>
+                                Alternative Investments
+                            </h3>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <a href="#" class="insight-box" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img1.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">21 Oct 2025</p>
+                                            <p>
+                                                Real Assets Outlook: Navigating 2025 Market Conditions
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img2.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">03 Oct 2025</p>
+                                            <p>
+                                                Structured Capital and the New Era of Opportunity
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img3.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">03 Oct 2025</p>
+                                            <p>
+                                                Inside Token House: Building an Institutional Platform in the City
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    <a href="#" class="insight-box" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img4.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">21 Oct 2025</p>
+                                            <p>
+                                                Real Assets Outlook: Navigating 2025 Market Conditions
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img5.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">03 Oct 2025</p>
+                                            <p>
+                                                Structured Capital and the New Era of Opportunity
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="insight-box insight-box__small" data-aos="fade-up">
+                                        <div class="imgwrap">
+                                            <img src="img/insights/investment-img6.jpg" alt="img">
+                                        </div>
+                                        <div class="description">
+                                            <p class="date">03 Oct 2025</p>
+                                            <p>
+                                                Inside Token House: Building an Institutional Platform in the City
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <a href="#" class="circle-link white">
+                                    <span>View More</span>
+                                    <i>
+                                        <img src="img/insights/plus.svg" alt="plus">
+                                    </i>
+                                </a>
                             </div>
                         </div>
                     </div>

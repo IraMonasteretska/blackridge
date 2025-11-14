@@ -1,0 +1,141 @@
+.contacts-section {
+    padding: 90px 0 20px;
+    position: relative;
+    overflow: hidden;
+
+    .bgelement {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 90%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        animation: pulse1 18s infinite;
+        animation-timing-function:
+            ease-in-out;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.contacts-info {
+    margin-bottom: 33px;
+
+    .title {
+        margin-bottom: 12px;
+        color: #999;
+    }
+
+    p {
+        color: #0E1E2B;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: #0E1E2B;
+        }
+    }
+
+    a {
+        color: #0E1E2B;
+        transition: 0.3s;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #0E1E2B;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.map {
+    margin-top: 40px;
+
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.contact-descr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: $primary;
+    }
+}
+
+.contact-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 46px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: #0E1E2B;
+            transition: 0.3s;
+            font-size: 20px;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background: $gold;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: -3px;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                color: $gold;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

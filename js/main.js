@@ -93,5 +93,20 @@ $(document).ready(function () {
         $(this).parents('.filter-item').find('.sort-text').removeClass('active');
     });
 
+    // filter tabs
+    const tabBtns = document.querySelectorAll(".filter-tabbtn");
+    const tabContents = document.querySelectorAll(".filter-content");
+
+    tabBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function () {
+            if (this.classList.contains("active")) return;
+
+            tabBtns.forEach(b => b.classList.remove("active"));
+            tabContents.forEach(c => c.classList.remove("active"));
+
+            this.classList.add("active");
+            tabContents[index].classList.add("active");
+        });
+    });
 
 });
