@@ -1,7 +1,423 @@
 .hero-section.post {
     padding-bottom: 50px;
-    
+
     h1 {
         font-size: 48px;
+    }
+}
+
+.postsection {
+    padding: 90px 0 30px;
+}
+
+.postshare {
+    max-width: 382px;
+}
+
+.post-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0;
+    border-top: 1px solid rgba(#999, 0.5);
+
+    &.share {
+        padding-top: 40px;
+    }
+
+    .leftbox {
+        width: 100%;
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+
+    .rightbox {
+        width: 100%;
+        max-width: 60%;
+        flex: 0 0 60%;
+        text-align: right;
+
+        p {
+            color: #999;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        color: $primary;
+    }
+}
+
+.post-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-right: 16px;
+
+        img {
+            width: 20px;
+            vertical-align: top;
+            transition: 0.3s;
+            filter: brightness(0);
+        }
+
+        button {
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+
+            &:hover {
+                img {
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+}
+
+article {
+
+    h1 {
+        font-weight: 700;
+        font-size: 32px;
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 26px;
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 25px;
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        color: $primary;
+        font-size: 24px;
+        font-weight: 700;
+
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+    h6 {
+        font-size: 24px;
+        color: $primary;
+        margin-bottom: 12px;
+        font-weight: 400;
+
+        &:nth-child(1) {
+            margin-bottom: 60px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $primary;
+        margin-bottom: 16px;
+    }
+
+    blockquote {
+        margin: 48px 0;
+        padding-left: 30px;
+        border-left: 1px solid #C0C0C0;
+
+        p {
+            font-size: 20px;
+            color: $primary;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 12px;
+        padding-left: 30px;
+
+        li {
+            font-size: 16px;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    figure {
+        margin: 60px 0;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        figcaption {
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}
+
+.latestnews-slider {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: 0;
+        top: initial;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #999;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: $gold;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+        left: initial;
+    }
+
+    .swiper-button-prev {
+        right: 60px;
+        left: initial;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 30px;
+    }
+}
+
+.latestnews {
+    padding-top: 90px;
+}
+
+@media(max-width:1399.8px) {
+    .postshare {
+        max-width: 300px;
+    }
+
+    .post-info.share {
+        padding-top: 20px;
+    }
+
+    .latestnews {
+        padding-top: 40px;
+    }
+
+
+
+    .post-info {
+        padding: 10px 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    .hero-section.post {
+        padding-bottom: 30px;
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+    .postsection {
+        padding-top: 60px;
+    }
+
+    article h6:first-child {
+        margin-bottom: 30px;
+    }
+
+    .postshare {
+        margin-top: 40px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .hero-section.post h1 {
+        font-size: 32px;
+    }
+
+    article {
+        h6 {
+            font-size: 18px;
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        blockquote {
+            margin: 30px 0;
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        figure {
+            margin: 30px 0;
+
+            img {
+                margin-bottom: 5px;
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .hero-section.post h1 {
+        font-size: 26px;
+    }
+
+    .postsection {
+        padding-top: 50px;
+    }
+
+    article blockquote {
+        padding-left: 20px;
+    }
+
+    article {
+        h5 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin: 0;
+        padding: 0;
+    }
+
+    header.header,
+    .latestnews,
+    footer.footer {
+        display: none;
+    }
+
+    .postsection {
+        .col-xl-4 {
+            display: none;
+        }
+
+        .col-xl-8 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
     }
 }
