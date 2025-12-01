@@ -125,7 +125,6 @@
 
         p {
             color: #000;
-            text-indent: 65px;
         }
 
         .topblock {
@@ -528,6 +527,14 @@
     animation: pulse1 18s infinite;
     animation-timing-function: ease-in-out;
 }
+
+
+.col-xxl-4 .heroinfo p,
+.infosection .description p {
+    text-indent: 65px;
+}
+
+// text-indent: 65px;
 
 
 @media(max-width:1499.8px) {
