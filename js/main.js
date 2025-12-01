@@ -30,7 +30,6 @@ $(document).ready(function () {
     document.querySelector('.totop').addEventListener('click', function () {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
         });
     });
 
@@ -46,16 +45,6 @@ $(document).ready(function () {
         $(this).delay($(this).data('delay')).queue(function () {
             $(this).addClass('animate-in');
         });
-    });
-
-    // scroll to anchor
-    $(".scrolllink").on("click", function (e) {
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 777);
-        e.preventDefault();
-        return false;
     });
 
     // tabs
@@ -110,10 +99,11 @@ $(document).ready(function () {
     });
 
     // print
-    document.querySelector(".print-btn").addEventListener("click", function () {
-        window.print();
-    });
-
+    if ($('.print-btn').length > 0) {
+        document.querySelector(".print-btn").addEventListener("click", function () {
+            window.print();
+        });
+    }
 
 
     // slider - latest news
@@ -139,7 +129,7 @@ $(document).ready(function () {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
-           
+
         },
     });
 
